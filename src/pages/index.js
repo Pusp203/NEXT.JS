@@ -2,14 +2,19 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Data } from "./Data";
 import Company from "./Company";
+import Cart from "./Cart";
+import Comparision from "./Comparision";
+import Compare from "./Compare";
+import Tables from "./Tables";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main>
-      <Company />
-      <div className="flex gap-2 flex-col">
+    <div>
+      {/* <Cart /> */}
+      {/* <Company /> */}
+      {/* <div className="flex gap-2 flex-col">
         <div>
           <h2 className="text-center">Accessories</h2>
           <h6 className="text-end text-[#BE1E2D]"> View all</h6>
@@ -36,7 +41,11 @@ export default function Home() {
             );
           })}
         </div>
-      </div>
-    </main>
+      </div> */}
+
+      <Compare />
+      {/* <Tables /> */}
+      {/* <Comparision /> */}
+    </div>
   );
 }
